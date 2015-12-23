@@ -207,7 +207,7 @@ public class HttpClient {
         req.setMethod(request.getMethod());
         req.setCompressed(request.getCompressed());              
         
-        req.setBodyAsBlob(request.getBodyAsBlob());
+        req.setBodyDocument(request.getBodyDocument()); 
         
         if (headers != null)
         	for (string key : headers.keySet())
