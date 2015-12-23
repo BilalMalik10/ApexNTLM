@@ -135,7 +135,7 @@ public class HttpClient {
         
         if (getIsPreAuthenticate()) {
             req.setHeader('Authorization', 'NTLM ' + mNtlm.getType1Message());
-            req.setBody('');
+            //req.setBody('');
             authStep = 1;
         }
             
