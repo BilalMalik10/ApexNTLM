@@ -138,6 +138,9 @@ public class HttpClient {
             //req.setBody('');
             authStep = 1;
         }
+        
+        // Add a default Content-Type header which is used for SOAP1.1 web services
+        if (headers==null) {req.setHeader('Content-Type', 'text/xml; charset=utf-8'); }
             
         HttpResponse resp = mHttp.send(req);
         
